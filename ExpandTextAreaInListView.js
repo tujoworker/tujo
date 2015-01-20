@@ -47,7 +47,9 @@ var sections = [];
 
 var section = Ti.UI.createListSection();
 var data = [
+    { input: {value: 'One line. '}},
     { input: {value: 'Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst END. '}},
+    { input: {value: 'Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst. '}},
 ];
 section.setItems(data);
 sections.push(section);
