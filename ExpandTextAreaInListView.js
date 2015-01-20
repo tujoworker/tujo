@@ -6,7 +6,7 @@ var myTemplate = {
         selectionStyle: Ti.UI.iPhone.ListViewCellSelectionStyle.NONE,
         width: Ti.UI.FILL,
         height: Ti.UI.SIZE,
-        height: 100,
+        height: 95,
         backgroundColor: 'green',
         clipMode: Ti.UI.iOS.CLIP_MODE_DISABLED,
     },
@@ -48,8 +48,8 @@ var sections = [];
 var section = Ti.UI.createListSection();
 var data = [
     { input: {value: 'One line. '}},
-    { input: {value: 'Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst END. '}},
-    { input: {value: 'Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst. '}},
+    { input: {value: 'Four Lines: 1 \n2 \n3 \n4'}},
+    { input: {value: 'A lot of lines: 1 \n2 \n3 \n4 \n5 \n6 \n7 \n8 \n9 \n10'}},
 ];
 section.setItems(data);
 sections.push(section);
