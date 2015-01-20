@@ -6,7 +6,7 @@ var myTemplate = {
         selectionStyle: Ti.UI.iPhone.ListViewCellSelectionStyle.NONE,
         width: Ti.UI.FILL,
         height: Ti.UI.SIZE,
-        height: 95,
+        // height: 95,
         backgroundColor: 'green',
         clipMode: Ti.UI.iOS.CLIP_MODE_DISABLED,
     },
