@@ -1,4 +1,6 @@
-var Observable = require('core/lib/Observe');
+
+//Add this file in /lib -> https://github.com/tujoworker/tujo/blob/master/Observe.js
+var Observable = require('/lib/Observe');
 
 var foo = {
     x: 'y',
@@ -17,3 +19,39 @@ setTimeout(function(){
         }, 30);
     }, 30);
 }, 30);
+
+// You will see this in the log:
+//
+// Changes:  (
+//         {
+//         name = x;
+//         object =         {
+//             x = z;
+//         };
+//         oldValue = y;
+//         type = update;
+//     }
+// )
+// Changes:  (
+//         {
+//         name = x;
+//         object =         {
+//             x =             {
+//                 foo = bar;
+//             };
+//         };
+//         oldValue = z;
+//         type = update;
+//     }
+// )
+// Changes:  (
+//         {
+//         name = x;
+//         object =         {
+//         };
+//         oldValue =         {
+//             foo = bar;
+//         };
+//         type = delete;
+//     }
+// )
